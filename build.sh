@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TARGET=/mnt
-BUILD=/home/dkr/rpi/build
+BUILD=/home/dkr/arcade/build
 
 mkdir -p $BUILD/conf
 source /home/dkr/poky-dunfell/oe-init-build-env $BUILD

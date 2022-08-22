@@ -30,8 +30,11 @@ RUN cd /home/dkr && \
     cd rpi && \
     git clone -b dunfell https://github.com/jumpnow/meta-rpi --depth=1
 
-COPY build.sh /home/dkr/build.sh
+RUN cd /home/dkr && \
+    mkdir arcade && \
+    cd arcade && \
+    git clone -b dunfell https://github.com/xonmello/meta-arcade --depth=1
 
-RUN git config --global --add safe.directory '*'
+COPY build.sh /home/dkr/build.sh
 
 CMD ["/bin/bash", "/home/dkr/build.sh"]

@@ -1,6 +1,6 @@
-# Raspberry Pi Yocto Builder
+#Raspberry Pi Yocto Builder
 
-This repo contains necessary files to build a Raspberry Pi based on Yocto project using Docker for an arcade machine.
+This repo contains necessary files to build a Raspberry Pi based on Yocto project using Docker.
 
 
 To build:
