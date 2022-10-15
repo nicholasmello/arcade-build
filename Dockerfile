@@ -35,6 +35,7 @@ RUN cd /home/dkr && \
     cd arcade && \
     git clone -b dunfell https://github.com/xonmello/meta-arcade --depth=1
 
+COPY rebuild /home/dkr/rebuild
 COPY build.sh /home/dkr/build.sh
 
 CMD ["/bin/bash", "/home/dkr/build.sh"]

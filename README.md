@@ -14,3 +14,9 @@ To run:
 ```sh
 $ docker run -v $(pwd):/mnt -ti yocto
 ```
+
+To rebuild (inside of the docker container):
+
+```sh
+$ ~/rebuild
+```
